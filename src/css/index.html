@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Playground</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- <script src="./centent.js"></script> -->
+   <script src="./script.js" type="module"></script>
+</head>
+<body>
+  <main class="shell">
+    <section class="workspace" aria-label="Playground workspace">
+      <section class="card editor-card workspace-panel" id="panel-source" aria-label="Code editor">
+        <header class="card-head"><div class="tabs" role="tablist" aria-label="Code language"><button class="tab" id="tab-html" role="tab" aria-selected="true" aria-controls="panel-html" tabindex="0" data-lang="html"><span class="dot html-dot"></span>index.html</button><button class="tab" id="tab-css" role="tab" aria-selected="false" aria-controls="panel-css" tabindex="-1" data-lang="css"><span class="dot css-dot"></span>styles.css</button></div><div class="panel-tools"><span class="tool-label" id="languageLabel">HTML</span><button class="small-btn" id="copyBtn" aria-label="Copy code" title="Copy code" type="button">▢</button><button class="small-btn" id="downloadBtn" aria-label="Export HTML" title="Export HTML" type="button">↓</button><button class="small-btn" id="resetBtn" aria-label="Reset code" title="Reset code" type="button">↺</button><button class="small-btn" id="showPreviewBtn" aria-label="Open preview" title="Preview" type="button"><svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div></header>
+        <div class="editor-area"><div class="line-nums" id="lineNums" aria-hidden="true"></div><textarea class="code-editor" id="codeEditor" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="HTML code editor" aria-multiline="true"></textarea></div>
+        <footer class="editor-foot"><span id="cursorInfo">Ln 1, Col 1</span><span><strong id="languageFooter">HTML</strong> &nbsp;·&nbsp; UTF-8</span></footer>
+      </section>
+      <section class="card preview-card workspace-panel" id="panel-preview" aria-label="Live preview" hidden>
+        <header class="card-head"><div class="preview-head"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="preview-title">Preview</span></div><div class="panel-tools"><span class="tool-label">Live</span><div class="device" role="group" aria-label="Preview size"><button class="active" data-width="100%" aria-label="Desktop preview" title="Desktop" type="button">▰</button><button data-width="390px" aria-label="Mobile preview" title="Mobile" type="button">▯</button></div><button class="small-btn" id="refreshBtn" aria-label="Refresh preview" title="Refresh preview" type="button">⟳</button><button class="small-btn" id="showSourceBtn" aria-label="Back to source code" title="Source code" type="button"><svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></button></div></header>
+        <iframe class="preview-frame" id="preview" title="Live HTML and CSS preview" sandbox="allow-scripts"></iframe>
+        <footer class="preview-foot"><span class="live">Live preview</span><span id="viewportLabel">Responsive · 100%</span></footer>
+      </section>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
