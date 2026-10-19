@@ -63,7 +63,14 @@ function setWorkspace(view) {
     previewPanel = document.getElementById("panel-preview");
   source.hidden = view !== "source";
   previewPanel.hidden = view !== "preview";
-  if (view === "preview") run();
+  if (view === "preview") {
+    requestAnimationFrame(() => {
+      // Wait for the previously hidden iframe to receive its visible layout
+      // size before creating its srcdoc document.
+      preview.getBoundingClientRect();
+      run();
+    });
+  }
 }
 document
   .getElementById("showPreviewBtn")
