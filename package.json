@@ -1,16 +1,12 @@
 {
-  "name": "html-css",
+  "name": "playground",
   "version": "1.0.0",
-  "description": "A template for HTML and CSS",
-  "main": "index.html",
+  "description": "",
   "scripts": {
-    "start": "serve"
+    "start": "serve ."
   },
-  "keywords": [
-    "html",
-    "css"
-  ],
-  "author": "Ives van Hoorne",
+  "keywords": [],
+  "author": "jlongyam",
   "license": "MIT",
   "devDependencies": {
     "serve": "11.2.0"

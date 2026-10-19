@@ -7,7 +7,7 @@ content.html = `
   <p>Change the code and watch your ideas take shape.</p>
   <button onclick="this.textContent='Nice work ✨'">Try me</button>
 </main>
-`
+`;
 
 content.css = `
 * { box-sizing: border-box; }
@@ -37,6 +37,9 @@ button {
   font: inherit; cursor: pointer;
 }
 button:hover { background: #647243; }
-`
+`;
+
+content.html = content.html.trim();
+content.css = content.css.trim();
 
 export default content
