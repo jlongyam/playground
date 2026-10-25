@@ -1,4 +1,4 @@
-export default function page(saved) {
+function page(saved) {
   return `
   <!doctype html>
   <html>
@@ -11,3 +11,4 @@ export default function page(saved) {
   </html>
 `;
 }
+//window.page = page;

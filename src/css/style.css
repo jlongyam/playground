@@ -186,7 +186,7 @@ button {
 }
 
 .card-head {
-  height: 58px;
+  height: calc(8px * 5);;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -666,4 +666,9 @@ body {
   .shell {
     padding: 0
   }
+}
+
+.preview-foot,
+.editor-foot {
+  display: none;
 }

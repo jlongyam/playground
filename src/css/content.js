@@ -41,5 +41,3 @@ button:hover { background: #647243; }
 
 content.html = content.html.trim();
 content.css = content.css.trim();
-
-export default content
